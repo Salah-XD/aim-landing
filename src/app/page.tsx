@@ -10,7 +10,7 @@ import Testimonial from "./testimonial";
 import Events from "./events";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
-
+import ContactForm from "@/components/ContactForm";
 export default function Campaign() {
   return (
     <>
@@ -23,6 +23,7 @@ export default function Campaign() {
       <Events />
       <StudentsFeedback />
       <TrustedCompany />
+      <ContactForm/>
       <Footer />
     </>
   );
