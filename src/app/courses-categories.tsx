@@ -3,6 +3,7 @@
 import React from "react";
 import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 import { TypographyProps } from "@material-tailwind/react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -14,17 +15,22 @@ import {
 import CategoryCard from "@/components/category-card";
 
 // Define types for categories
+// Updated Category interface
+
 interface Category {
   img: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: ForwardRefExoticComponent<
+    React.SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>
+  >;
   title: string;
   desc: string;
 }
 
+// Categories with icons
 const CATEGORIES: Category[] = [
   {
     img: "/image/blogs/blog-3.png",
-    icon: HeartIcon,
+    icon: HeartIcon, // No cast needed if interface is updated
     title: "Original Ideas",
     desc: "Ignite innovation and unlock new possibilities with our creative idea catalysts and transformative concepts.",
   },
@@ -53,11 +59,7 @@ export function CoursesCategories() {
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
         {/* Explicitly specifying TypographyProps if needed */}
-        <Typography 
-          variant="h2" 
-          color="blue-gray" 
-          className="my-3"
-        >
+        <Typography variant="h2" color="blue-gray" className="my-3">
           What We Do
         </Typography>
         {/* Optional Subtitle (uncomment if needed) */}
