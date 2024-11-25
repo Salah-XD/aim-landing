@@ -10,6 +10,7 @@ import Testimonial from "./testimonial";
 import Events from "./events";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
+import ContactForm from "@/components/ContactForm";
 import AboutUs from "@/components/AboutUs";
 
 export default function Campaign() {
@@ -26,6 +27,7 @@ export default function Campaign() {
       {/* <Events /> */}
       <StudentsFeedback />
       <TrustedCompany />
+      <ContactForm/>
       <Footer />
     </>
   );
