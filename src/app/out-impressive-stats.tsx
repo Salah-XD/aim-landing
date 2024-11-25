@@ -11,7 +11,6 @@ import {
 
 import StatsCard from "@/components/stats-card";
 
-
 const STATS = [
   {
     icon: DocumentTextIcon,
@@ -37,9 +36,9 @@ const STATS = [
 
 export function OutImpressiveStats() {
   return (
-    <section className="px-8 pt-60">
+    <section className="px-8 pt-60 mt-[10rem]">
       <div className="container mx-auto text-center lg:text-left">
-        <div className="grid place-items-center text-center">
+        {/* <div className="grid place-items-center text-center">
           <Typography variant="h2" color="blue-gray" className="mb-2 text-4xl">
             Explore Our Impressive Stats
           </Typography>
@@ -50,7 +49,7 @@ export function OutImpressiveStats() {
             We take pride in our commitment to excellence and our dedication to
             your success.
           </Typography>
-        </div>
+        </div> */}
         <div className="grid gap-y-16 gap-x-10 md:grid-cols-2 lg:grid-cols-4">
           {STATS.map((props, key) => (
             <StatsCard key={key} {...props} />

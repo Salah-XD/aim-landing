@@ -23,7 +23,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
         />
       </CardHeader>
       <CardBody>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <Typography
             variant="small"
             color="blue"
@@ -31,7 +31,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
           >
             {tag}
           </Typography>
-        </div>
+        </div> */}
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-900"
@@ -40,10 +40,10 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
             {title}
           </Typography>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        {/* <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
-        </Typography>
-        <Button variant="outlined">{label}</Button>
+        </Typography> */}
+        {/* <Button variant="outlined">{label}</Button> */}
       </CardBody>
     </Card>
   );
