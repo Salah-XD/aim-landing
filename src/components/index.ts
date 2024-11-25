@@ -9,4 +9,5 @@ export * from "./category-card";
 export * from "./course-card";
 export * from "./event-card";
 export * from "./footer";
+export * from "./AboutUs"
 // export * from "./fixed-plugin";

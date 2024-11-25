@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
+import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -17,31 +12,30 @@ import {
 
 import CategoryCard from "@/components/category-card";
 
-
 const CATEGORIES = [
   {
     img: "/image/blogs/blog-3.png",
     icon: HeartIcon,
-    title: "Frontend Web Development",
-    desc: "300 Courses",
+    title: "Original Ideas",
+    desc: "Ignite innovation and unlock new possibilities with our creative idea catalysts and transformative concepts.",
   },
   {
     img: "/image/blogs/blog-12.jpeg",
     icon: PuzzlePieceIcon,
-    title: "Backend Web Development",
-    desc: "200 Courses",
+    title: "Man Power Requirement",
+    desc: "Unlock Your Potential with Our Manpower Requirement Services",
   },
   {
     img: "/image/blogs/blog-10.jpeg",
     icon: GlobeEuropeAfricaIcon,
-    title: "Web Security & Performance",
-    desc: "240 Courses",
+    title: "Company Franchise",
+    desc: "Join the Journey to Unlock Unlimited Growth with Our Extraordinary Franchise Opportunities",
   },
   {
     img: "/image/blogs/blog-13.png",
     icon: MicrophoneIcon,
-    title: "Full-Stack Web Development",
-    desc: "100 Courses",
+    title: "Remote and Cloud Services",
+    desc: "Seamless Connectivity, Limitless Possibilities to Embrace the Power of Remote and Cloud Services",
   },
 ];
 
@@ -50,12 +44,12 @@ export function CoursesCategories() {
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
         <Typography variant="h2" color="blue-gray" className="my-3">
-          Courses Categories
+          What We Do
         </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        {/* <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
           A comprehensive selection of courses designed to empower you with the
           skills you need to thrive in the dynamic world of web development.
-        </Typography>
+        </Typography> */}
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <Card

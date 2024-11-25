@@ -10,17 +10,19 @@ import Testimonial from "./testimonial";
 import Events from "./events";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
+import AboutUs from "@/components/AboutUs";
 
 export default function Campaign() {
   return (
     <>
       <Navbar />
       <Hero />
+      <AboutUs />
       <OutImpressiveStats />
       <CoursesCategories />
       <ExploreCourses />
-      <Testimonial />
-      <Events />
+      {/* <Testimonial /> */}
+      {/* <Events /> */}
       <StudentsFeedback />
       <TrustedCompany />
       <Footer />

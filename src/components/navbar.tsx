@@ -17,17 +17,24 @@ import {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Home",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
+    name: "About",
     icon: UserCircleIcon,
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    name: "Service",
+    icon: UserCircleIcon,
+  },
+  {
+    name: "Portfolio",
+    icon: UserCircleIcon,
+  },
+  {
+    name: "Contact",
+    icon: UserCircleIcon,
   },
 ];
 
@@ -119,7 +126,7 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              <div className="mt-6 mb-4 flex items-center gap-4">
+              {/* <div className="mt-6 mb-4 flex items-center gap-4">
                 <Button variant="text">Log in</Button>
                 <a
                   href="https://www.material-tailwind.com/blocks"
@@ -127,7 +134,7 @@ export function Navbar() {
                 >
                   <Button color="gray">blocks</Button>
                 </a>
-              </div>
+              </div> */}
             </div>
           </Collapse>
         </MTNavbar>
