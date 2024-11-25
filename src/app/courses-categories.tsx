@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
+import { TypographyProps } from "@material-tailwind/react";
+
 import {
   GlobeEuropeAfricaIcon,
   MicrophoneIcon,
@@ -55,8 +57,6 @@ export function CoursesCategories() {
           variant="h2" 
           color="blue-gray" 
           className="my-3"
-          align="center" // add alignment if required
-          weight="medium" // example weight (optional)
         >
           What We Do
         </Typography>
