@@ -69,11 +69,11 @@ function Hero() {
           </Card>
         </div>
       </div>
-      <DotLottieReact
+      {/* <DotLottieReact
       src="https://lottie.host/2df97dd1-299c-4e34-ae28-e3404be1c9dc/AwItvezmMo.lottie"
       loop
       autoplay
-    />
+    /> */}
     </div>
   );
 }

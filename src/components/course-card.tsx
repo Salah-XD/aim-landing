@@ -1,7 +1,6 @@
 import { Typography, Card, CardBody, CardHeader, Button } from "@material-tailwind/react";
 import Image from "next/image";
 
-
 interface CourseCardProps {
   img: string;
   tag: string;
@@ -12,26 +11,20 @@ interface CourseCardProps {
 
 export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
   return (
-    <Card className="border">
-      <CardHeader className="h-64">
+    <Card className="border max-w-sm mx-auto">
+      {/* CardHeader - Centering the image */}
+      <CardHeader className="h-64 relative flex justify-center items-center">
         <Image
           width={768}
           height={768}
           src={img}
           alt={title}
-          className="h-full w-full object-cover scale-[1.1]"
+          className="h-full w-full object-cover scale-[1.1] rounded-lg"
         />
       </CardHeader>
-      <CardBody>
-        {/* <div className="flex items-center gap-2">
-          <Typography
-            variant="small"
-            color="blue"
-            className="mb-2 font-normal text-gray-500"
-          >
-            {tag}
-          </Typography>
-        </div> */}
+      
+      {/* CardBody - Centering the text */}
+      <CardBody className="text-center flex flex-col justify-center items-center p-6">
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-900"
@@ -40,7 +33,8 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
             {title}
           </Typography>
         </a>
-        {/* <Typography className="mb-6 font-normal !text-gray-500">
+        {/* Optional description and button */}
+        {/* <Typography className="mb-6 font-normal text-gray-500">
           {desc}
         </Typography> */}
         {/* <Button variant="outlined">{label}</Button> */}

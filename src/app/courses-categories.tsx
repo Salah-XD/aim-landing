@@ -20,13 +20,13 @@ const CATEGORIES = [
     desc: "Ignite innovation and unlock new possibilities with our creative idea catalysts and transformative concepts.",
   },
   {
-    img: "/image/blogs/blog-12.jpeg",
+    img: "/image/blogs/blog-12.png",
     icon: PuzzlePieceIcon,
     title: "Man Power Requirement",
     desc: "Unlock Your Potential with Our Manpower Requirement Services",
   },
   {
-    img: "/image/blogs/blog-10.jpeg",
+    img: "/image/blogs/blog-10.png",
     icon: GlobeEuropeAfricaIcon,
     title: "Company Franchise",
     desc: "Join the Journey to Unlock Unlimited Growth with Our Extraordinary Franchise Opportunities",

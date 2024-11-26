@@ -3,18 +3,19 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
+
 const AboutUs = () => {
   return (
-    <div className="container mx-auto mb-24 text-center px-4">
+    <div className="container mx-auto text-center px-4 mt-[18rem] mb-24">
       <div className="text-5xl font-bold my-12">About Us</div>
-      <div className="flex gap-7">
+      <div className="flex flex-col gap-7 lg:flex-row lg:justify-center">
         <Image
           src="https://placehold.co/1000x1000"
           width={300}
           height={300}
           alt="logo"
         />
-        <span className="leading-[1.5]">
+        <span className="leading-[1.5] text-gray-600 mt-4 lg:mt-0 lg:w-3/5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           temporibus sit est quia vero praesentium dolor saepe doloribus
           suscipit, dolores deserunt illo iste nemo! Deleniti minima dolor sint

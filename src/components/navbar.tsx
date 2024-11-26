@@ -22,25 +22,29 @@ import { MdMiscellaneousServices } from "react-icons/md";
 const NAV_MENU = [
   {
     name: "Home",
+    href: "#home",
     icon: RectangleStackIcon,
   },
   {
     name: "About",
+    href: "#about",
     icon: UserCircleIcon,
   },
   {
     name: "Service",
+    href: "#services",
     icon: MdMiscellaneousServices,
   },
   {
     name: "Portfolio",
+    href: "#portfolio",
     icon: MdDashboard,
   },
   {
     name: "Contact",
+    href: "#contact",
     icon: IoIosMail,
   },
-  
 ];
 
 interface NavItemProps {
@@ -54,9 +58,6 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="paragraph"
-        color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         {children}
@@ -100,9 +101,9 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="">
-                <Button color="gray">Contact Us</Button>
-              </a>
+              <Button color="gray" href="#contact">
+                Contact Us
+              </Button>
             </div>
             <IconButton
               variant="text"
@@ -127,15 +128,6 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              {/* <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Log in</Button>
-                <a
-                  href="https://www.material-tailwind.com/blocks"
-                  target="_blank"
-                >
-                  <Button color="gray">blocks</Button>
-                </a>
-              </div> */}
             </div>
           </Collapse>
         </MTNavbar>
