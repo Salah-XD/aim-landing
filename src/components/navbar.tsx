@@ -9,47 +9,49 @@ import {
 import {
   RectangleStackIcon,
   UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
-import { MdWork } from "react-icons/md";
-import { MdDashboard } from "react-icons/md";
+import { MdWork, MdDashboard, MdMiscellaneousServices } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
-import { MdMiscellaneousServices } from "react-icons/md";
 
 const NAV_MENU = [
   {
     name: "Home",
     href: "#home",
     icon: RectangleStackIcon,
+    href: "/", // Home URL
   },
   {
     name: "About",
     href: "#about",
     icon: UserCircleIcon,
+    href: "/about", // About URL
   },
   {
     name: "Service",
     href: "#services",
     icon: MdMiscellaneousServices,
+    href: "/services", // Services URL
   },
   {
     name: "Portfolio",
     href: "#portfolio",
     icon: MdDashboard,
+    href: "/portfolio", // Portfolio URL
   },
   {
     name: "Contact",
     href: "#contact",
     icon: IoIosMail,
+    href: "/contact", // Contact URL
   },
+
 ];
 
 interface NavItemProps {
   children: React.ReactNode;
-  href?: string;
+  href: string; // Ensure `href` is required
 }
 
 function NavItem({ children, href }: NavItemProps) {
@@ -58,6 +60,9 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
+        target={href ? "_blank" : "_self"}
+        variant="paragraph"
+        color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         {children}
@@ -92,6 +97,7 @@ export function Navbar() {
             <Typography color="blue-gray" className="text-lg font-bold">
               Aim Universe
             </Typography>
+            {/* Desktop Menu */}
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
                 <NavItem key={name} href={href}>
@@ -101,10 +107,11 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button color="gray" href="#contact">
-                Contact Us
-              </Button>
+              <a href="">
+                <Button color="gray">Contact Us</Button>
+              </a>
             </div>
+            {/* Mobile Menu Icon */}
             <IconButton
               variant="text"
               color="gray"
@@ -118,6 +125,7 @@ export function Navbar() {
               )}
             </IconButton>
           </div>
+          {/* Mobile Collapse Menu */}
           <Collapse open={open}>
             <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
               <ul className="flex flex-col gap-4">

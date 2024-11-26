@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <div className="container mx-auto text-center px-4 mt-[18rem] mb-24">
       <div className="text-5xl font-bold my-12">About Us</div>
-      <div className="flex flex-col gap-7 lg:flex-row lg:justify-center">
+      <div className="flex flex-col gap-7 flex-wrap lg:flex-row lg:justify-center">
         <Image
           src="https://placehold.co/1000x1000"
           width={300}
