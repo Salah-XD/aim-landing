@@ -41,11 +41,7 @@ const NAV_MENU = [
     icon: IoIosMail,
     href: "/contact", // Contact URL
   },
-  {
-    name: "Career",
-    icon: MdWork,
-    href: "/career", // Career URL
-  },
+
 ];
 
 interface NavItemProps {

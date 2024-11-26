@@ -5,12 +5,11 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const COMPANIES = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
+  "cp",
+  "hikvision",
+  "innoural",
+  "parama",
   "amazon",
-  "netflix",
 ];
 
 function TrustedCompany() {

@@ -60,21 +60,21 @@ const ContactForm: React.FC = () => {
                 <FaPhone className="mr-2" />
                 <span className="font-bold">Call us:</span>
               </div>
-              <span className="block text-gray-700">(123) 456-7890</span>
+              <span className="block text-gray-700">(91) 9345253890</span>
             </div>
             <div className="mb-4">
               <div className="flex items-center text-gray-600">
                 <FaEnvelope className="mr-2" />
                 <span className="font-bold">Email us:</span>
               </div>
-              <span className="block text-gray-700">info@example.com</span>
+              <span className="block text-gray-700">aimuniversse@gmail.com</span>
             </div>
             <div>
               <div className="flex items-center text-gray-600">
                 <FaMapMarkerAlt className="mr-2" />
                 <span className="font-bold">Address:</span>
               </div>
-              <span className="block text-gray-700">123 Main Street, Anytown, USA</span>
+              <span className="block text-gray-700">2, Kelimel street, Lekshmipuram, Ganapathy, Coimbatore, Tamil Nadu 641006</span>
             </div>
           </div>
           <div className="md:w-1/2">
