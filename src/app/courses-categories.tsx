@@ -88,9 +88,12 @@ export function CoursesCategories() {
             >
               Contact us for the seamless services
             </Typography>
+            <a href="#contact">
             <Button size="sm" color="white">
               Contact Now
             </Button>
+            </a>
+            
           </CardBody>
         </Card>
 

@@ -6,9 +6,9 @@ import { Typography } from "@material-tailwind/react";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto text-center px-4 mt-[18rem] mb-24">
+    <div className="container mx-auto text-center px-5 mt-[18rem] mb-24">
       <div className="text-5xl font-bold my-12">About Us</div>
-      <div className="flex gap-7 flex-wrap justify-center">
+      <div className="flex gap-7 flex-wrap justify-center items-center">
 
         <Image
           src="https://placehold.co/1000x1000"
@@ -16,14 +16,11 @@ const AboutUs = () => {
           height={300}
           alt="logo"
         />
-        <span className="leading-[1.5] text-gray-600 mt-4 lg:mt-0 lg:w-3/5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          temporibus sit est quia vero praesentium dolor saepe doloribus
-          suscipit, dolores deserunt illo iste nemo! Deleniti minima dolor sint
-          sit aspernatur voluptatem dignissimos in. Quod alias harum
-          perspiciatis sequi cumque cupiditate consequuntur aut voluptate. Esse
-          repellat enim ab consequuntur id vitae?
-        </span>
+        <Typography variant="lead" className="leading-[1.5] sm:text-2xl text-xl  mt-4 lg:mt-0 lg:w-3/5  text-justify">
+        Anbarasan is a business magnate and investor. He is the founder,
+         CEO and chief engineer of Aim universse, CEO and Co-founder of Eminent technology, 
+         Co-founder of AVTECHTWO and Business development manager of the Inouora technology.
+        </Typography>
       </div>
     </div>
   );
