@@ -25,7 +25,7 @@ function Hero() {
               >
                 Aim Universe
               </Typography>
-              <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
+              <Typography variant="lead" className="mb-10 mt-6 text-justify !text-gray-900">
                 Ready to take your brand to new heights? Look no further! We are
                 your trusted partner in harnessing the power of digital
                 marketing to expand your reach and amplify your impact.
