@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import AimLogo from "../../public/image/aim-webp.webp"; // Adjust path to match your directory structure
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -16,37 +18,16 @@ import { MdWork, MdDashboard, MdMiscellaneousServices } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 
 const NAV_MENU = [
-  {
-    name: "Home",
-    icon: RectangleStackIcon,
-    href: "/", // Home URL
-  },
-  {
-    name: "About",
-    icon: UserCircleIcon,
-    href: "/about", // About URL
-  },
-  {
-    name: "Service",
-    icon: MdMiscellaneousServices,
-    href: "/services", // Services URL
-  },
-  {
-    name: "Portfolio",
-    icon: MdDashboard,
-    href: "/portfolio", // Portfolio URL
-  },
-  {
-    name: "Contact",
-    icon: IoIosMail,
-    href: "/contact", // Contact URL
-  },
-
+  { name: "Home", icon: RectangleStackIcon, href: "/" },
+  { name: "About", icon: UserCircleIcon, href: "/about" },
+  { name: "Service", icon: MdMiscellaneousServices, href: "/services" },
+  { name: "Portfolio", icon: MdDashboard, href: "/portfolio" },
+  { name: "Contact", icon: IoIosMail, href: "/contact" },
 ];
 
 interface NavItemProps {
   children: React.ReactNode;
-  href: string; // Ensure `href` is required
+  href: string;
 }
 
 function NavItem({ children, href }: NavItemProps) {
@@ -69,15 +50,14 @@ function NavItem({ children, href }: NavItemProps) {
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
-  function handleOpen() {
+  const handleOpen = () => {
     setOpen((cur) => !cur);
-  }
+  };
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 960) setOpen(false);
+    });
   }, []);
 
   return (
@@ -89,9 +69,19 @@ export function Navbar() {
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
-              Aim Universe
-            </Typography>
+            <div className="flex items-center gap-3">
+              <Image
+                src={AimLogo}
+                alt="Aim Universe Logo"
+                width={30}
+                height={30}
+                className="ml-2"
+              />
+              <Typography color="blue-gray" className="text-lg font-bold">
+                Aim Universe
+              </Typography>
+            </div>
+
             {/* Desktop Menu */}
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -106,6 +96,7 @@ export function Navbar() {
                 <Button color="gray">Contact Us</Button>
               </a>
             </div>
+
             {/* Mobile Menu Icon */}
             <IconButton
               variant="text"
@@ -120,6 +111,7 @@ export function Navbar() {
               )}
             </IconButton>
           </div>
+
           {/* Mobile Collapse Menu */}
           <Collapse open={open}>
             <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">

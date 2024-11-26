@@ -76,20 +76,20 @@ export function CoursesCategories() {
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
           <CardBody className="relative w-full">
-            <Typography color="white" className="text-xs font-bold opacity-50">
+            {/* <Typography color="white" className="text-xs font-bold opacity-50">
               HTML, CSS & Javascript
-            </Typography>
+            </Typography> */}
             <Typography variant="h4" className="mt-9" color="white">
-              Web Development Intro
+              Got a New Project ?
             </Typography>
             <Typography
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >
-              Ready to start your web development journey?
+              Contact us for the seamless services
             </Typography>
             <Button size="sm" color="white">
-              Enroll Now
+              Contact Now
             </Button>
           </CardBody>
         </Card>
