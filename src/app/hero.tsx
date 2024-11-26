@@ -31,7 +31,10 @@ function Hero() {
                 marketing to expand your reach and amplify your impact.
               </Typography>
               <div className="mb-8 flex justify-center gap-4 lg:justify-start">
+                <a href="#services">
                 <Button color="gray">view all Services</Button>
+                </a>
+                
                 {/* <Button color="gray" variant="outlined">
                 see pricing
               </Button> */}

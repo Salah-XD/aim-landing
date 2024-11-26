@@ -41,13 +41,13 @@ const CATEGORIES: Category[] = [
     desc: "Unlock Your Potential with Our Manpower Requirement Services",
   },
   {
-    img: "/image/blogs/blog-10.png",
+    img: "/image/blogs/blog-10.jpg",
     icon: GlobeEuropeAfricaIcon,
     title: "Company Franchise",
     desc: "Join the Journey to Unlock Unlimited Growth with Our Extraordinary Franchise Opportunities",
   },
   {
-    img: "/image/blogs/blog-13.png",
+    img: "/image/blogs/blog-17.png",
     icon: MicrophoneIcon,
     title: "Remote and Cloud Services",
     desc: "Seamless Connectivity, Limitless Possibilities to Embrace the Power of Remote and Cloud Services",
