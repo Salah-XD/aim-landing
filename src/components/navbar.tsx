@@ -22,26 +22,31 @@ const NAV_MENU = [
     name: "Home",
     href: "#home",
     icon: RectangleStackIcon,
+
   },
   {
     name: "About",
     href: "#about",
     icon: UserCircleIcon,
+
   },
   {
     name: "Service",
     href: "#services",
     icon: MdMiscellaneousServices,
+
   },
   {
     name: "Portfolio",
     href: "#portfolio",
     icon: MdDashboard,
+
   },
   {
     name: "Contact",
     href: "#contact",
     icon: IoIosMail,
+
   },
 ];
 
@@ -55,8 +60,8 @@ function NavItem({ children, href }: NavItemProps) {
     <li>
       <Typography
         as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
+        href={href}
+        target="_self"
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -112,9 +117,10 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="">
-                <Button color="gray">Contact Us</Button>
-              </a>
+              <Button color="gray" href="#contact">
+                Contact Us
+              </Button>
+
             </div>
 
             {/* Mobile Menu Icon */}
