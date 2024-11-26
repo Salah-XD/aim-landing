@@ -11,20 +11,7 @@ const COURSES = [
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
   },
-  {
-    img: "/image/blogs/blog3.svg",
-    tag: "Medium • 10 Classes • 150 Students",
-    title: "CC TV",
-    label: "from $199",
-    desc: "Our Responsive Design course teaches you the art of creating websites that seamlessly adapt to different devices and screen sizes.",
-  },
-  {
-    img: "/image/blogs/blog2.svg",
-    tag: "Medium • 23 Classes • 590 Students",
-    title: "Digital Marketing",
-    label: "from $499",
-    desc: "Take your frontend development to the next level with our React Development course. Learn how to build interactive, dynamic web applications.",
-  },
+  
 ];
 
 export function ExploreCourses() {

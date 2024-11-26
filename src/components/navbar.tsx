@@ -40,10 +40,7 @@ const NAV_MENU = [
     name: "Contact",
     icon: IoIosMail,
   },
-  {
-    name: "Career",
-    icon: MdWork,
-  },
+  
 ];
 
 interface NavItemProps {

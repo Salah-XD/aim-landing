@@ -25,7 +25,7 @@ export default function Campaign() {
       <ExploreCourses />
       {/* <Testimonial /> */}
       {/* <Events /> */}
-      <StudentsFeedback />
+      {/* <StudentsFeedback /> */}
       <TrustedCompany />
       <ContactForm/>
       <Footer />
