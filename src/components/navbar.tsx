@@ -22,34 +22,27 @@ const NAV_MENU = [
     name: "Home",
     href: "#home",
     icon: RectangleStackIcon,
-    href: "/", // Home URL
   },
   {
     name: "About",
     href: "#about",
     icon: UserCircleIcon,
-    href: "/about", // About URL
   },
   {
     name: "Service",
     href: "#services",
     icon: MdMiscellaneousServices,
-    href: "/services", // Services URL
   },
   {
     name: "Portfolio",
     href: "#portfolio",
     icon: MdDashboard,
-    href: "/portfolio", // Portfolio URL
   },
   {
     name: "Contact",
     href: "#contact",
     icon: IoIosMail,
-    href: "/contact", // Contact URL
   },
-
-
 ];
 
 interface NavItemProps {
