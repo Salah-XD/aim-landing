@@ -22,31 +22,26 @@ const NAV_MENU = [
     name: "Home",
     href: "#home",
     icon: RectangleStackIcon,
-
   },
   {
     name: "About",
     href: "#about",
     icon: UserCircleIcon,
-
   },
   {
     name: "Service",
     href: "#services",
     icon: MdMiscellaneousServices,
-
   },
   {
     name: "Portfolio",
     href: "#portfolio",
     icon: MdDashboard,
-
   },
   {
     name: "Contact",
     href: "#contact",
     icon: IoIosMail,
-
   },
 ];
 
@@ -117,10 +112,9 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button color="gray" href="#contact">
-                Contact Us
-              </Button>
-
+              <a href="#contact">
+                <Button color="gray">Contact Us</Button>
+              </a>
             </div>
 
             {/* Mobile Menu Icon */}
