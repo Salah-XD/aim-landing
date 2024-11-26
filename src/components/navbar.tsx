@@ -18,11 +18,38 @@ import { MdWork, MdDashboard, MdMiscellaneousServices } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 
 const NAV_MENU = [
-  { name: "Home", icon: RectangleStackIcon, href: "/" },
-  { name: "About", icon: UserCircleIcon, href: "/about" },
-  { name: "Service", icon: MdMiscellaneousServices, href: "/services" },
-  { name: "Portfolio", icon: MdDashboard, href: "/portfolio" },
-  { name: "Contact", icon: IoIosMail, href: "/contact" },
+  {
+    name: "Home",
+    href: "#home",
+    icon: RectangleStackIcon,
+    href: "/", // Home URL
+  },
+  {
+    name: "About",
+    href: "#about",
+    icon: UserCircleIcon,
+    href: "/about", // About URL
+  },
+  {
+    name: "Service",
+    href: "#services",
+    icon: MdMiscellaneousServices,
+    href: "/services", // Services URL
+  },
+  {
+    name: "Portfolio",
+    href: "#portfolio",
+    icon: MdDashboard,
+    href: "/portfolio", // Portfolio URL
+  },
+  {
+    name: "Contact",
+    href: "#contact",
+    icon: IoIosMail,
+    href: "/contact", // Contact URL
+  },
+
+
 ];
 
 interface NavItemProps {
@@ -35,8 +62,8 @@ function NavItem({ children, href }: NavItemProps) {
     <li>
       <Typography
         as="a"
-        href={href}
-        target="_self"
+        href={href || "#"}
+        target={href ? "_blank" : "_self"}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -92,7 +119,7 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="/contact">
+              <a href="">
                 <Button color="gray">Contact Us</Button>
               </a>
             </div>

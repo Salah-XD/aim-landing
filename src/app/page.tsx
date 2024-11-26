@@ -17,17 +17,25 @@ export default function Campaign() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <OutImpressiveStats />
-      <AboutUs />
-
-      <CoursesCategories />
-      <ExploreCourses />
-      {/* <Testimonial /> */}
-      {/* <Events /> */}
-      {/* <StudentsFeedback /> */}
-      <TrustedCompany />
-      <ContactForm/>
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about" className="pt-12">
+        <AboutUs />
+      </section>
+      <section id="stats">
+        <OutImpressiveStats />
+      </section>
+      <section id="services" className="pt-16">
+        <CoursesCategories />
+      </section>
+      <section id="portfolio" className="pt-16">
+        <ExploreCourses />
+      </section>
+      
+      <section id="contact" className="pt-16">
+        <ContactForm />
+      </section>
       <Footer />
     </>
   );
