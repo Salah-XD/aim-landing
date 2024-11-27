@@ -12,6 +12,16 @@ import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 import ContactForm from "@/components/ContactForm";
 import AboutUs from "@/components/AboutUs";
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+// const theme = createTheme({
+//   rating: {
+//     defaultProps: {
+//       ratedIcon: null,
+//       unratedIcon: null
+//     }
+//   }
+// });
 
 export default function Campaign() {
   return (
@@ -32,7 +42,7 @@ export default function Campaign() {
       <section id="portfolio" className="pt-16">
         <ExploreCourses />
       </section>
-      
+
       <section id="contact" className="pt-16">
         <ContactForm />
       </section>

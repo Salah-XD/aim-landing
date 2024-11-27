@@ -8,10 +8,10 @@ function Hero() {
   return (
     <div className="!flex h-[55vh] w-full items-center justify-between px-10 ">
       <Image
-        width={1200}
-        height={1200}
-        src="/image/hero-bg.png"
-        alt="bg-img"
+        width={3000}
+        height={3000}
+        src="/image/herobg2.jpg"
+        alt="bg-img.png"
         className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
       />
       <div className="relative">
@@ -25,16 +25,19 @@ function Hero() {
               >
                 Aim Universe
               </Typography>
-              <Typography variant="lead" className="mb-10 mt-6 text-justify !text-gray-900">
+              <Typography
+                variant="lead"
+                className="mb-10 mt-6 text-justify !text-gray-900"
+              >
                 Ready to take your brand to new heights? Look no further! We are
                 your trusted partner in harnessing the power of digital
                 marketing to expand your reach and amplify your impact.
               </Typography>
               <div className="mb-8 flex justify-center gap-4 lg:justify-start">
                 <a href="#services">
-                <Button color="gray">view all Services</Button>
+                  <Button color="gray">view all Services</Button>
                 </a>
-                
+
                 {/* <Button color="gray" variant="outlined">
                 see pricing
               </Button> */}
@@ -73,14 +76,13 @@ function Hero() {
           </div>
         </div>
         <div className="absolute hidden lg:block -right-16 w-[700px] top-[40%]">
-  <DotLottieReact
-    src="https://lottie.host/2df97dd1-299c-4e34-ae28-e3404be1c9dc/AwItvezmMo.lottie"
-    loop
-    autoplay
-  />
-</div>
+          <DotLottieReact
+            src="https://lottie.host/2df97dd1-299c-4e34-ae28-e3404be1c9dc/AwItvezmMo.lottie"
+            loop
+            autoplay
+          />
+        </div>
       </div>
-
     </div>
   );
 }
