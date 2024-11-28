@@ -11,6 +11,20 @@ const COURSES = [
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
   },
+  {
+    img: "/image/blogs/blog44.webp",
+    tag: "Beginner • 25 Classes • 200 Students",
+    title: "Tick My Bus",
+    label: "from $99",
+    desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+  },
+  {
+    img: "/image/blogs/blog4.jpg",
+    tag: "Beginner • 25 Classes • 200 Students",
+    title: "Anbu Transport Private Limited",
+    label: "from $99",
+    desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+  },
 ];
 
 export function ExploreCourses() {
