@@ -17,9 +17,9 @@ const AboutUs = () => {
           alt="logo"
         />
         <Typography variant="lead" className="leading-[1.5] sm:text-2xl text-xl  mt-4 lg:mt-0 lg:w-3/5  text-justify">
-        Anbarasan is a business magnate and investor. He is the founder,
-         CEO and chief engineer of Aim universse, CEO and Co-founder of Eminent technology, 
-         Co-founder of AVTECHTWO and Business development manager of the Inouora technology.
+        Established in 2022, Aim Universse is a versatile and dynamic company offering a comprehensive range of services including BPO Services, Human Resource Solutions, Travel Solutions, and CCTV Solutions. Based on the pillars of innovation, reliability, and customer satisfaction, Aim Universse is committed to providing businesses with tailored solutions to meet their unique operational needs.
+
+Our focus is on empowering businesses to achieve operational excellence, enhance productivity, and streamline processes. From managing customer support to offering advanced security solutions, we aim to be your trusted partner in business success.
         </Typography>
       </div>
     </div>
