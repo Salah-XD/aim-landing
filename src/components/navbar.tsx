@@ -112,8 +112,8 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="#contact">
-                <Button color="gray">Contact Us</Button>
+              <a href="https://fintrackfe.vercel.app/" target = "_blank">
+                <Button color="gray">Agent Accounts</Button>
               </a>
             </div>
 
