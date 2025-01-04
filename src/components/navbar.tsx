@@ -22,40 +22,59 @@ const NAV_MENU = [
     name: "Home",
     href: "#home",
     icon: RectangleStackIcon,
+    offset: -100, // No offset for Home
   },
   {
     name: "About",
     href: "#about",
     icon: UserCircleIcon,
+    offset: 300, // Custom offset for About
   },
   {
     name: "Service",
     href: "#services",
     icon: MdMiscellaneousServices,
+    offset: 120, // Custom offset for Service
   },
   {
     name: "Portfolio",
     href: "#portfolio",
     icon: MdDashboard,
+    offset: -50, // Custom offset for Portfolio
   },
   {
     name: "Contact",
     href: "#contact",
     icon: IoIosMail,
+    offset: 0, // Custom offset for Contact
   },
 ];
+
 
 interface NavItemProps {
   children: React.ReactNode;
   href: string;
+  offset?: number; // Optional offset for scrolling
 }
 
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href, offset = 0 }: NavItemProps) {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.getBoundingClientRect().top + window.scrollY + offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <li>
       <Typography
         as="a"
         href={href}
+        onClick={handleClick}
         target="_self"
         variant="paragraph"
         color="gray"
@@ -66,6 +85,7 @@ function NavItem({ children, href }: NavItemProps) {
     </li>
   );
 }
+
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -104,13 +124,15 @@ export function Navbar() {
 
             {/* Desktop Menu */}
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
-              {NAV_MENU.map(({ name, icon: Icon, href }) => (
-                <NavItem key={name} href={href}>
-                  <Icon className="h-5 w-5" />
-                  {name}
-                </NavItem>
-              ))}
-            </ul>
+  {NAV_MENU.map(({ name, icon: Icon, href, offset }) => (
+    <NavItem key={name} href={href} offset={offset}>
+      <Icon className="h-5 w-5" />
+      {name}
+    </NavItem>
+  ))}
+</ul>
+
+
             <div className="hidden items-center gap-4 lg:flex">
               <a href="https://fintrackfe.vercel.app/" target = "_blank">
                 <Button color="gray">Agent Accounts</Button>

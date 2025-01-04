@@ -5,12 +5,20 @@ import CourseCard from "@/components/course-card";
 
 const COURSES = [
   {
-    img: "/image/blogs/blog4.jpg",
+    img: "/image/blogs/blog45.png",
     tag: "Beginner • 25 Classes • 200 Students",
-    title: "BPO",
+    title: "FinTrack",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
   },
+  {
+    img: "/image/blogs/blog46.webp",
+    tag: "Beginner • 25 Classes • 200 Students",
+    title: "Anbu Transport Private Limited",
+    label: "from $99",
+    desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+  },
+  
   {
     img: "/image/blogs/blog44.webp",
     tag: "Beginner • 25 Classes • 200 Students",
@@ -21,10 +29,12 @@ const COURSES = [
   {
     img: "/image/blogs/blog4.jpg",
     tag: "Beginner • 25 Classes • 200 Students",
-    title: "Anbu Transport Private Limited",
+    title: "BPO",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
   },
+  
+  
 ];
 
 export function ExploreCourses() {

@@ -43,7 +43,7 @@ export default function Campaign() {
         <ExploreCourses />
       </section>
 
-      <section id="contact" className="pt-16">
+      <section id="contact" className="relative z-10 pt-16">
         <ContactForm />
       </section>
       <Footer />
