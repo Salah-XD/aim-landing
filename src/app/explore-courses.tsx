@@ -10,6 +10,7 @@ const COURSES = [
     title: "FinTrack",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+    link: "https://fintrackfe.vercel.app/"
   },
   {
     img: "/image/blogs/blog46.webp",
@@ -17,6 +18,7 @@ const COURSES = [
     title: "Anbu Transport Private Limited",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+    link:'https://anbu-transports.vercel.app/'
   },
   
   {
@@ -25,6 +27,7 @@ const COURSES = [
     title: "Tick My Bus",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+    link:'https://tickmybuss.vercel.app/'
   },
   {
     img: "/image/blogs/blog4.jpg",
@@ -49,8 +52,10 @@ export function ExploreCourses() {
         <div className="flex flex-wrap justify-center gap-10">
           {COURSES.map((props, idx) => (
             <div key={idx} className="flex justify-center items-center">
+            <a href={props.link} target ="_blank" className="no-underline hover:underline">
               <CourseCard {...props} />
-            </div>
+            </a>
+          </div>
           ))}
         </div>
       </div>
