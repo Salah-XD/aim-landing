@@ -21,6 +21,7 @@ const AboutUs = () => {
             As the CEO & Co-founder of Eminent Technology, he has been at the forefront of technological advancements, driving growth and fostering innovation. Additionally, Anbarasan serves as the Business Development Manager at Innoura Technologies, where he excels in building strategic partnerships and expanding market presence. His diverse expertise, entrepreneurial spirit, and commitment to excellence have solidified his reputation as a key player in multiple industries, always seeking opportunities to create value and elevate businesses to new heights.
           </p>
         </div>
+
       </div>
     </div>
   );
