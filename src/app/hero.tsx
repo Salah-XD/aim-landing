@@ -23,7 +23,7 @@ function Hero() {
                 color="blue-gray"
                 className="lg:text-5xl !leading-snug text-3xl lg:max-w-3xl"
               >
-                Aim Universe
+                Aim Universse
               </Typography>
               <Typography
                 variant="lead"
