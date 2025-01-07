@@ -15,7 +15,7 @@ const COURSES = [
   {
     img: "/image/blogs/blog46.webp",
     tag: "Beginner • 25 Classes • 200 Students",
-    title: "Anbu Transport Private Limited",
+    title: "Anbu Transport Service Private Limited",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
     link:'https://anbu-transports.vercel.app/'
@@ -27,7 +27,7 @@ const COURSES = [
     title: "Tick My Bus",
     label: "from $99",
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
-    link:'https://tickmybuss.vercel.app/'
+    link:'#'
   },
   {
     img: "/image/blogs/blog4.jpg",
