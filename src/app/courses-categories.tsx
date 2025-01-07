@@ -31,26 +31,26 @@ const CATEGORIES: Category[] = [
   {
     img: "/image/blogs/blog-3.png",
     icon: HeartIcon, // No cast needed if interface is updated
-    title: "Original Ideas",
-    desc: "Ignite innovation and unlock new possibilities with our creative idea catalysts and transformative concepts.",
+    title: "BPO Services",
+    desc: "Our Business Process Outsourcing (BPO) services help businesses optimize operations, reduce costs, and focus on their core competencies. We offer a range of BPO services, including customer support, data processing, back-office management, and more. By outsourcing to us, businesses can improve efficiency and ensure high-quality outcomes.",
   },
   {
     img: "/image/blogs/blog-12.png",
     icon: PuzzlePieceIcon,
-    title: "Man Power Requirement",
-    desc: "Unlock Your Potential with Our Manpower Requirement Services",
+    title: "Human Resource Solutions",
+    desc: "Our Human Resource (HR) services are designed to support organizations in managing their workforce more effectively. From recruitment and onboarding to payroll management and employee benefits, we provide end-to-end HR solutions that help you attract, retain, and develop top talent. Let us handle the complexities of HR while you focus on growing your business.",
   },
   {
     img: "/image/blogs/blog-10.jpg",
     icon: GlobeEuropeAfricaIcon,
-    title: "Company Franchise",
-    desc: "Join the Journey to Unlock Unlimited Growth with Our Extraordinary Franchise Opportunities",
+    title: "Travel Solutions",
+    desc: "Whether you're a corporate client or an individual traveler, our Travel solutions simplify your travel experience. We offer a range of services, including bus ticket booking, corporate travel management, and customized travel plans to suit your unique requirements. Our platform ensures a seamless and hassle-free booking process.",
   },
   {
     img: "/image/blogs/blog-17.png",
     icon: MicrophoneIcon,
-    title: "Remote and Cloud Services",
-    desc: "Seamless Connectivity, Limitless Possibilities to Embrace the Power of Remote and Cloud Services",
+    title: "CCTV Solutions",
+    desc: "Security is a top priority for every business, and our CCTV solutions provide the peace of mind you need. We offer high-quality CCTV systems tailored to your specific security needs, including installation, maintenance, and monitoring services. Whether you're securing a small office or a large enterprise, our solutions ensure your safety 24/7",
   },
 ];
 
