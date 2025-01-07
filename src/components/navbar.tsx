@@ -118,7 +118,7 @@ export function Navbar() {
                 className="ml-2"
               />
               <Typography color="blue-gray" className="text-lg font-bold">
-                Aim Universe
+                Aim Universse
               </Typography>
             </div>
 
