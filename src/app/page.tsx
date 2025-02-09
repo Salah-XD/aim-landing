@@ -26,7 +26,11 @@ import AboutUs from "@/components/AboutUs";
 export default function Campaign() {
   return (
     <>
-      <Navbar />
+      <span className="flex justify-center items-center flex-wrap text-3xl">Website Under contruction</span>
+{/*       <Navbar />
+      <section id="home">
+        <Hero />
+      </section><Navbar />
       <section id="home">
         <Hero />
       </section>
@@ -47,6 +51,23 @@ export default function Campaign() {
         <ContactForm />
       </section>
       <Footer />
+      <section id="about" className="pt-12">
+        <AboutUs />
+      </section>
+      <section id="stats">
+        <OutImpressiveStats />
+      </section>
+      <section id="services" className="pt-16">
+        <CoursesCategories />
+      </section>
+      <section id="portfolio" className="pt-16">
+        <ExploreCourses />
+      </section>
+
+      <section id="contact" className="relative z-10 pt-16">
+        <ContactForm />
+      </section>
+      <Footer /> */}
     </>
   );
 }
