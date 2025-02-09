@@ -26,7 +26,7 @@ import AboutUs from "@/components/AboutUs";
 export default function Campaign() {
   return (
     <>
-      <span className="flex justify-center items-center flex-wrap text-3xl">Website Under contruction</span>
+      <span className="h-screen flex justify-center items-center flex-wrap text-3xl">Website Under contruction</span>
 {/*       <Navbar />
       <section id="home">
         <Hero />
